@@ -5,6 +5,7 @@ import HeroContent from "./components/HeroContent.jsx";
 import Section1Image from "./components/Section1Image.jsx";
 import Section1Content from "./components/Section1Content.jsx";
 import GridCard from "./components/GridCard.jsx";
+import Footer from "./components/Footer.jsx";
 
 import "./App.css";
 
@@ -61,6 +62,7 @@ function App() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
