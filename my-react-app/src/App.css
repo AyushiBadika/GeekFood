@@ -23,13 +23,19 @@
 .navbar ul,
 .navbar div {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 
 li {
   list-style: none;
   font-weight: 600;
+}
+a {
+  color: white;
+  font-size: 1.2rem;
+
+  text-decoration: none;
 }
 button {
   background-color: #2562ea;
@@ -180,4 +186,24 @@ h3 {
 }
 .socialIcon li {
   width: 25px;
+}
+.quotes {
+  margin-top: 8rem;
+}
+
+.quoteContainer {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #111827;
+  color: white;
+  text-align: center;
+}
+.quoteContainer h2 {
+  margin-bottom: 1rem;
+}
+.quoteContainer p {
+  color: rgb(192, 192, 192);
+  font-size: 1.2rem;
+  font-weight: 600;
 }

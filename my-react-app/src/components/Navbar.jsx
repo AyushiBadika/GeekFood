@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -8,11 +9,21 @@ function Navbar() {
           <h3>GeekFoods</h3>
         </div>
         <ul>
-          <li>Home</li>
-          <li>Quote</li>
-          <li>Resturants</li>
-          <li>Foods</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/quotes">Quotes</Link>
+          </li>
+          <li>
+            <Link to="/">Restaurant</Link>
+          </li>
+          <li>
+            <Link to="/">Foods</Link>
+          </li>
+          <li>
+            <Link to="/">Contacts</Link>
+          </li>
         </ul>
         <button>Get Started</button>
       </div>

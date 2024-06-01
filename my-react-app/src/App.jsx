@@ -1,18 +1,16 @@
 // import { useState } from "react";
-import Navbar from "./components/Navbar.jsx";
+
 import HeroSection from "./components/HeroSection.jsx";
 import HeroContent from "./components/HeroContent.jsx";
 import Section1Image from "./components/Section1Image.jsx";
 import Section1Content from "./components/Section1Content.jsx";
 import GridCard from "./components/GridCard.jsx";
-import Footer from "./components/Footer.jsx";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Navbar />
       <HeroSection />
       <HeroContent />
       <div className="sideBySide">
@@ -62,7 +60,6 @@ function App() {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
