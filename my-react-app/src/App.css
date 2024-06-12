@@ -207,3 +207,49 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.restaurantContainer {
+  margin-top: 6rem;
+}
+
+.searchRes {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.allRestaurant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.top {
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.restaurant {
+  width: 30%;
+  margin-bottom: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.address {
+  margin-top: 0.8rem;
+  gap: 0.5rem;
+  display: flex;
+}
+.code {
+  margin-top: 0.8rem;
+}
+
+.bottom {
+  background-color: #f3f5f7;
+  padding: 2rem;
+}
