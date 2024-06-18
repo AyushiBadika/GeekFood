@@ -23,7 +23,7 @@
 .navbar ul,
 .navbar div {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -33,19 +33,12 @@ li {
 }
 a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
   text-decoration: none;
 }
-button {
-  background-color: #2562ea;
-  border: none;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-}
 
-.navbar li:first-child,
+.active,
 .navbar li:hover {
   color: #2562ea;
 }
@@ -252,4 +245,44 @@ h3 {
 .bottom {
   background-color: #f3f5f7;
   padding: 2rem;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 75px;
+  aspect-ratio: 1;
+  display: grid;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  width: 35px;
+  aspect-ratio: 1;
+  box-shadow: 0 0 0 3px #000 inset;
+  filter: drop-shadow(40px 40px 0 #000);
+  animation: l8 2s infinite alternate;
+}
+.loader:after {
+  margin: 0 0 0 auto;
+  filter: drop-shadow(-40px 40px 0 #000);
+  animation-delay: -1s;
+}
+@keyframes l8 {
+  0%,
+  10% {
+    border-radius: 0;
+  }
+  30%,
+  40% {
+    border-radius: 50% 0;
+  }
+  60%,
+  70% {
+    border-radius: 50%;
+  }
+  90%,
+  100% {
+    border-radius: 0 50%;
+  }
 }

@@ -8,7 +8,6 @@ export default function Quotes() {
     axios("https://api.quotable.io/quotes/random?limit=10").then((res) => {
       setResponse(res.data);
     });
-    console.log(response);
   }, []);
 
   return (

@@ -59,6 +59,7 @@ export default function Restaurant() {
             setSearchInput(e.target.value);
             handleFilter(e, null);
           }}
+          className="border-2 border-black rounded"
           style={{
             height: "2.5rem",
             width: "15rem",
@@ -74,6 +75,7 @@ export default function Restaurant() {
             value={ratingInput}
             max={5}
             min={0}
+            className="border-2 border-black rounded"
             onChange={(e) => {
               setRatingInput(e.target.value);
               handleFilter(null, e);
